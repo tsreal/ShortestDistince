@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.test.dijkstra.GUI">
+  <grid id="27dc6" binding="jpanel1" layout-manager="BorderLayout" hgap="-1" vgap="-1">
+    <constraints>
+      <xy x="149" y="15" width="642" height="395"/>
+    </constraints>
+    <properties/>
+    <border type="line"/>
+    <children>
+      <component id="ac46" class="javax.swing.JLabel" binding="headLine">
+        <constraints border-constraint="North"/>
+        <properties>
+          <font size="24" style="1"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="南京地铁线路及价格查询工具"/>
+        </properties>
+      </component>
+      <grid id="a273e" binding="jPanel2" layout-manager="FormLayout">
+        <rowspec value="center:59px:noGrow"/>
+        <rowspec value="top:3dlu:noGrow"/>
+        <rowspec value="center:50px:noGrow"/>
+        <rowspec value="top:5dlu:noGrow"/>
+        <rowspec value="center:49px:noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:97px:noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <colspec value="fill:92px:noGrow"/>
+        <colspec value="left:11dlu:noGrow"/>
+        <colspec value="fill:199px:noGrow"/>
+        <colspec value="left:9dlu:noGrow"/>
+        <colspec value="fill:250px:noGrow"/>
+        <colspec value="left:4dlu:noGrow"/>
+        <colspec value="fill:33px:grow"/>
+        <constraints border-constraint="West"/>
+        <properties/>
+        <border type="line">
+          <color color="-16777216"/>
+        </border>
+        <children>
+          <component id="842c9" class="javax.swing.JLabel" binding="lineNum">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false" defaultalign-vert="false"/>
+            </constraints>
+            <properties>
+              <font size="18" style="1"/>
+              <text value="地铁线编号"/>
+            </properties>
+          </component>
+          <component id="2c8ca" class="javax.swing.JLabel" binding="StationName">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false" defaultalign-vert="false"/>
+            </constraints>
+            <properties>
+              <font size="18" style="1"/>
+              <text value="站点名称"/>
+            </properties>
+          </component>
+          <component id="96182" class="javax.swing.JComboBox" binding="comboBox_startLineNum">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <model/>
+            </properties>
+          </component>
+          <component id="40c85" class="javax.swing.JComboBox" binding="comboBox_startStationName">
+            <constraints>
+              <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="53854" class="javax.swing.JComboBox" binding="comboBox_endLineNum">
+            <constraints>
+              <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="3c1ef" class="javax.swing.JComboBox" binding="comboBox_endStationName">
+            <constraints>
+              <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="2a45b" class="javax.swing.JLabel" binding="label_startPoint">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false"/>
+            </constraints>
+            <properties>
+              <font size="18" style="1"/>
+              <text value="出发点:"/>
+            </properties>
+          </component>
+          <component id="fc284" class="javax.swing.JLabel" binding="label_endPoint">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false"/>
+            </constraints>
+            <properties>
+              <font size="18" style="1"/>
+              <text value="目的地:"/>
+            </properties>
+          </component>
+          <component id="4b88f" class="javax.swing.JLabel" binding="label_outPut">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false"/>
+            </constraints>
+            <properties>
+              <font size="18" style="1"/>
+              <text value="查询结果:"/>
+            </properties>
+          </component>
+          <hspacer id="e77cb">
+            <constraints>
+              <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false"/>
+            </constraints>
+          </hspacer>
+          <component id="d79be" class="javax.swing.JButton" binding="button_Search">
+            <constraints>
+              <grid row="8" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <background color="-65536"/>
+              <foreground color="-1"/>
+              <text value="查询"/>
+            </properties>
+          </component>
+          <component id="6c8ac" class="javax.swing.JButton" binding="button_Input">
+            <constraints>
+              <grid row="10" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <text value="手动输入"/>
+            </properties>
+          </component>
+          <scrollpane id="4436d" binding="scroll">
+            <constraints>
+              <grid row="6" column="2" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false" defaultalign-vert="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="fc730" class="javax.swing.JTextArea" binding="textArea_Result">
+                <constraints/>
+                <properties>
+                  <font size="18" style="1"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

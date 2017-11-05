@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ShortestDistince:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ShortestDistince_jar</output-path>
+    <root id="archive" name="ShortestDistince.jar">
+      <element id="module-output" name="ShortestDistince" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/一些jar包/gui/jgoodies-forms.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
